@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>全民直播-绑定银行卡</title>
+    <meta name="description" content="">
+
+    <meta name="keywords" content="" />
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+  
+    <script src="js/es5-shim.min.js"></script>
+    <![endif]-->
+    <!--   <link rel="icon" href="img/favicon.ico"/> -->
+    <script src="js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/attestation.css">
+    <style>
+        body {
+            background: #f5f8fa;
+        }
+    </style>
+</head>
+
+<body>
+    <!--头部 导航栏-->
+    <header>
+
+    </header>
+    <div class="nav" style=" display:none;">
+        <div class="container nav-bar">
+            <a href="javascript:;" onclick="history.back()" class="form-nav"> <i class="fa fa-angle-left"></i></a>
+            <a href="#" class="upload-img-back upload-img-nav slide-upload-box slide-upload-box-2" style="display:none;"> <i class="fa fa-angle-left"></i></a>
+            <span class="text-color-fe form-nav">认证成为主播</span>
+            <span class=" upload-img-nav" style="display:none;">上传证件</span>
+        </div>
+
+
+    </div>
+    <div class="atte-form-main">
+        <div class="atte-main-box clearfloat">
+            <!--表单-->
+            <div class="atte-form-box">
+                <div class="atte-form-title">
+                    <p class="container">
+                        绑定银行卡
+                    </p>
+                </div>
+                <div class="atte-form-con-box atte-h5-form-box">
+                    <div class="atte-form-con">
+                        <div class="container">
+                            <div class="atte-form-con-col">
+                                <p>银行卡卡号</p>
+                                <input type="number" class="erroed af-input" name="real_name" onfocus="this.placeholder=''" onblur="this.placeholder='请输入银行卡卡号'"
+                                    placeholder="请输入银行卡卡号" value="">
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="atte-form-con">
+                        <div class="container">
+                            <div class="atte-form-con-col">
+                                <p>开户行名称</p>
+                                <input type="text" maxlength="" class="erroed af-id-number af-input" name="id_card" onfocus="this.placeholder=''" onblur="this.placeholder='请输入开户行名称'"
+                                    placeholder="请输入开户行名称" value="">
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+                  <div class="atte-upload-img-box atte-h5-form-box">
+                <!--<div class="atte-form-title">
+                    <p class="container">
+                        上传身份证
+                    </p>
+                </div>-->
+               
+            </div>
+                <!--<div class="atte-form-title">
+                    <p class="container">
+                        电话验证
+                    </p>
+                </div>
+                <div class="atte-form-con-box">
+
+                    <div class="atte-form-con">
+                        <div class="container">
+                            <div class="atte-form-con-col">
+                                <p>手机号</p>
+                                <input id="login_phone" oninput="if(value.length>11)value=value.slice(0,11)" class="erroed af-input login-phone-ipt" type="number"
+                                    min="0" name="mobile" onfocus="this.placeholder=''" onblur="this.placeholder='请输入手机号'" placeholder="请输入手机号"
+                                    maxlength="11" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="atte-form-con">
+                        <div class="container">
+                            <div class="atte-form-con-col betten get-sms-code-box">
+                                <p>验证码</p>
+                                <input type="text" name="sms_code" class="erroed af-input" onfocus="this.placeholder=''" onblur="this.placeholder='请输入验证码'"
+                                    placeholder="请输入验证码" value="">
+                                <a href="#" class="font-fa text actived get-sms-code-a" id="get_sms_code"> <span class="text-color-fe">获取验证码</span> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="atte-form-btn-box">
+                    <a href="#" id="all_submit_btn">绑定</a>
+                </div>
+            </div>
+            <!--上传图片-->
+          
+        </div>
+
+    </div>
+    <div class="modal-info">
+        <div class="modal-content">
+            <div class="other-modal-info">
+                <p class="info-text">
+
+                </p>
+
+            </div>
+
+        </div>
+        <div class="close-modal">
+
+        </div>
+    </div>
+   <script>
+  
+   </script>
+    <script src="js/lazyload-min.js"></script>
+    <script>
+    </script>
+    <script>
+        //获取 id token  fetch 刷新页面
+     
+        // Load the YUI Dom, Event, and Animation libraries if they haven't already
+        // been loaded.
+        LazyLoad.loadOnce([
+            'js/jquery-1.11.3.min.js',
+            'js/fetch.js', 
+             'js/browser.min.js',
+            'm_js/attestation.js',
+             'm_js/atte_form_1.js'
+        ]);
+    </script>
+
+</body>
+
+</html>
